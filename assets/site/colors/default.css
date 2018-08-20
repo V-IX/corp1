@@ -1,0 +1,64 @@
+/* reset */
+
+a {color: #003f82;}
+
+::selection {background: #003f82;}
+
+.btn {background: #003f82;}
+.btn:hover {background: #003064;}
+
+.btn-extra {background: #ea1b28;}
+.btn-extra:hover {background: #d8000e;}
+
+.text-color-main {color: #003f82;}
+.text-color-extra {color: #ea1b28;}
+
+.note {border-left-color: #003f82;}
+
+/* template */
+
+.logo {background: #25acc4;}
+
+.logo-title {color: #003f82;}
+.logo-descr {color: #ea1b28;}
+
+.tmenu .item > a {background: #ea1b28;}
+.tmenu .item:hover > a {background: #d8000e;}
+.tmenu .submenu > ul {border: 2px solid #ea1b28;}
+
+.footer-wrapper {border-top: 3px solid #003f82;}
+
+.footer-wrapper:before,
+.footer-wrapper:after {border-top: 3px solid #ea1b28;}
+
+.developer a {color: #ea1b28;}
+
+.breadcrumbs {color: #003f82;}
+
+.pagination span.num {background: #ea1b28;}
+
+/* content */
+
+.home-form {
+	background: #25acc4;
+	border-bottom: 5px solid #1f8da0;
+}
+
+.services-item:hover .title {color: #003f82;}
+
+.snav-level-1 > li._not_empty > a:before {border-right-color: #003f82;}
+.snav-level-1 > li._not_empty._open > a:before {border-top-color: #003f82;}
+
+.services-more {
+	color: #ea1b28;
+	border-bottom: 2px dotted #ea1b28;
+}
+
+.news-item:hover .title,
+.news-tile:hover .title,
+.news-other:hover .title {color: #003f82;}
+
+.gallery-item:hover .title {color: #003f82;}
+
+.home-news-list h4 {color: #003f82;}
+.home-news-list a:hover h4 {color: #ea1b28;}
