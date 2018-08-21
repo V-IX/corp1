@@ -112,7 +112,8 @@
 		Положение слева
 	</div>
 	<div class="col-9 form-colinput">
-		<input type="text" class="form-input" name="slide_css[left]" data-css="left" data-target="#slideWrap" value="<?=set_value('slide_css[left]', $slide_css['left'])?>" />
+		<input type="text" class="form-input" name="slide_css[left]" data-css="left" data-target="#slideWrap" value="<?=set_value('slide_css[left]', $slide_css['left'])+150?>" />
+		<? var_dump($slide_css) ?>
 		<?=form_error('slide_css[left]'); ?>
 	</div>
 </div>

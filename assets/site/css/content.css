@@ -2,48 +2,36 @@
 
 /* slider */
 
-.offer-slider-wrap {
-	position: relative;
-}
-
 .offer-slider {
 	position: relative;
 	overflow: hidden;
-	width: 980px;
+	width: 100%;
 	height: 300px;
 	border-radius: 5px;
 }
-
-.offer-slider > ul {
-	position: absolute;
-	left: 0; top: 0;
-}
-
-.offer-slider > ul > li {
-	float: left;
-	width: 980px;
-	height: 300px;
-}
-
 .offer-slide {
-	display: block;
-	position: relative;
-	width: 980px;
-	height: 300px;
-	text-decoration: none;
-	color: inherit;
+    height: 300px;
+    line-height: 280px;
 }
-
-.offer-slide .scontent {
-	position: absolute;
+.offer-slider a {
+    text-decoration: none;
 }
-
-.offer-slide .stext > div {margin-bottom: 5px;}
-.offer-slide .stext > div:last-child {margin-bottom: 0;}
-
-.offer-slide .scontent > div {margin-bottom: 15px;}
-.offer-slide .scontent > div:last-child {margin-bottom: 0;}
-
+.offer-slide .img {
+    position: absolute;
+    top: 0;
+    width: 1170px;
+}
+.offer-slide .in {
+    position: relative;
+    z-index: 10;
+    line-height: 1;
+}
+.offer-slide .in .title {
+    margin-bottom: 10px;
+}
+.offer-slide .sbtn {
+    margin-top: 20px;
+}
 .offer-slide .sbtn .btn {
 	display: inline-block;
 	vertical-align: middle;
@@ -58,37 +46,47 @@
 	text-align: center;
 	background: #ea1b28;
 }
-
 .offer-slide .sbtn .btn:hover {
 	background: #d8000e;
 }
-
-.offer-btn {
-	position: absolute;
-	display: block;
-	width: 34px;
-	height: 48px;
-	top: 50%;
-	margin-top: -24px;
-	z-index: 10;
-	transition: opacity 0.3s ease 0s;
-	cursor: pointer;
-	opacity: 0;
+.offer-btns {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 0;
+    z-index: 200;
+    width: 100%;
 }
 
-.offer-slider-wrap:hover .offer-btn {opacity: 1;}
-
-.offer-btn._prev {
-	background: url('../img/icons/offer-btn-prev.png') no-repeat;
-	left: 20px;
+.offer-btns > a {
+    display: block;
+    position: absolute;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    font-size: 30px;
+    line-height: 46px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease 0s;
 }
 
-.offer-btn._next {
-	background: url('../img/icons/offer-btn-next.png') no-repeat;
-	right: 20px;
+.offer:hover .offer-btns {
+    opacity: 1;
 }
 
-.offer-btn:hover {opacity: 0.8;}
+.offer-btns .flex-prev {
+	left: 30px;
+    padding-right: 4px;
+}
+.offer-btns .flex-next {
+	right: 30px;
+    padding-left: 4px;
+}
+.offer-btns a:hover {opacity: 0.8;}
 
 /* home */
 

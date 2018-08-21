@@ -3,7 +3,7 @@
 <div class="reviews">
 	<div class="wrapper">
 		<div class="row">
-			<div class="col-8">
+			<div class="col-8 feedback_people">
 				<div class="page-top">
 					<h1 class="page-title"><?=$pageinfo['title'];?></h1>
 					<? if($pageinfo['brief'] != '') { ?><div class="page-descr"><?=$pageinfo['brief'];?></div><? } ?>
@@ -32,7 +32,7 @@
 				<? } ?>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-4 feedback_form">
 				<div class="feedback-form">
 					<div class="h3 bold mb20">Оставить свой отзыв</div>
 					<?=form_open('reviews/ajaxSend', array('data-toggle' => 'ajaxForm', 'data-thanks' => '#reviewsThanks'));?>

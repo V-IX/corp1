@@ -8,10 +8,10 @@
 					<h3 class="page-title"><?=$item['title'];?></h3>
 					<div class="page-descr mt20">
 						<div class="row">
-							<div class="col-6 mt5">
+							<div class="col-6 mt5 oneh">
 								<span class="text-gray"><?=translate_date($item['addDate']);?></span>
 							</div>
-							<div class="col-6">
+							<div class="col-6 oneh">
 								<div class="social text-right">
 									<div class="social-label mr10">Поделиться:</div>
 									<div class="social-init" data-toggle="social"></div>

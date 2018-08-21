@@ -13,7 +13,7 @@
 			</div>
 		<? } ?>
 			<div class="row">
-				<div class="col-7">
+				<div class="col-7 feedback_people">
 					<div class="mb15">
 						<div class=""><?=fa('map-marker fa-fw text-gray mr5');?><?=$siteinfo['adres'];?></div>
 					</div>
@@ -32,7 +32,7 @@
 					</div>
 					<div class="small text-gray"><?=nl2br($siteinfo['details']);?></div>
 				</div>
-				<div class="col-5">
+				<div class="col-5 feedback_form">
 					<div class="feedback-form">
 						<?=form_open('contacts/ajaxSend', array('data-toggle' => 'ajaxForm'));?>
 							<div class="mb20">

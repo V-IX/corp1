@@ -4,8 +4,12 @@
 
 <div class="wrapper">
 	<div class="row">
+	<div class="col-<?=!empty($services) ? '8' : '12';?> block_company">
+			<h1 class="mb20">О компании</h1>
+			<div class="text-editor"><?=$pageinfo['text'];?></div>
+    </div>
 	<? if(!empty($services)) { ?>
-		<div class="col-3">
+		<div class="col-3 block_services">
 			<div class="h3 bold mb20"><?=$siteinfo['menuTitle'];?></div>
 			<ul class="hnav">
 			<? foreach($lmenu as $_lmenu) { ?>
@@ -24,10 +28,6 @@
 		</div>
 		<div class="col-1"></div>
 	<? } ?>
-		<div class="col-<?=!empty($services) ? '8' : '12';?>">
-			<h1 class="mb20">О компании</h1>
-			<div class="text-editor"><?=$pageinfo['text'];?></div>
-		</div>
 	</div>
 	<? if(!empty($news)) { ?>
 		<div class="home-news">

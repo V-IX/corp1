@@ -7,7 +7,7 @@
 	<title><?=$seo['title'];?></title>
 	<meta name="keywords" content="<?=$seo['keywords'];?>" />
 	<meta name="description" content="<?=$seo['description'];?>" />
-	<meta name="viewport" content="width=1000" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	
 	<?=link_tag('assets/plugins/font-awesome/css/font-awesome.min.css');?>
 	<?=link_tag('assets/plugins/font-opensans/font.css');?>
@@ -15,6 +15,7 @@
 	<?=link_tag('assets/site/css/template.css');?>
 	<?=link_tag('assets/site/css/content.css');?>
 	<?=link_tag(array('href' => 'assets/site/colors/default.css', 'rel' => 'stylesheet', 'type' => 'text/css', 'id' => 'colorCss'));?>
+	<?=link_tag('assets/plugins/flexslider/flexslider.css');?>
 	
 	<?=link_tag('favicon.ico', 'shortcut icon', 'image/ico');?>
 	<?=link_tag('favicon.ico', 'shortcut', 'image/ico');?>
@@ -57,10 +58,15 @@
 				<?=phone($siteinfo['phone'], $siteinfo['phoneMask']);?>
 			</div>
 		</div>
+		<div class="tmenu_btn">
+	    <a href="javascript:void(0)" class="tmenu-btn">
+	        <?=fa('bars');?>
+	    </a>
+	</div>
 	</div>
 </div>
 <div class="tmenu-wrap">
-	<div class="wrapper">
+<!--	<div class="wrapper _1">-->
 		<div class="tmenu">
 			<ul>
 			<? foreach($tmenu as $_tmenu) { ?>
@@ -80,7 +86,7 @@
 				</li>
 			<? } ?>
 			</ul>
-		</div>
+<!--		</div>-->
 	</div>
 </div>
 <div class="content">
@@ -91,21 +97,8 @@
 	<div class="footer">
 		<div class="wrapper">
 			<div class="row">
-				<div class="col-5">
-					<div class="footer-adres"><?=nl2br($siteinfo['adres']);?></div>
-					<div class="footer-social">
-						<div class="label">Мы в соцсетях:</div>
-						<div class="icons">
-							<a href="https://facebook.com/" target="_blank" title="Мы в Facebook"><?=fa('facebook');?></a>
-							<a href="https://vk.com/" target="_blank" title="Мы Вконтакте"><?=fa('vk');?></a>
-							<a href="http://ok.ru/" target="_blank" title="Мы в Одноклассниках"><?=fa('odnoklassniki');?></a>
-						</div>
-					</div>
-					<div class="copyright"><?=$siteinfo['title'];?> &copy; <?=date('Y');?>. Все права защищены</div>
-					<div class="developer">Разработка: <a href="http://narisuemvse.by" target="_blank">Narisuemvse.by</a></div>
-				</div>
-				<div class="col-1"></div>
-				<div class="col-6">
+           
+            <div class="col-6 footer_menu">
 					<div class="row">
 					<? foreach($fmenu as $_fmenu) { ?>
 						<div class="col-6">
@@ -120,6 +113,20 @@
 						</div>
 					<? } ?>
 					</div>
+				</div>
+				<div class="col-1 footer_none"></div>
+				<div class="col-5 footer_adress">
+					<div class="footer-adres"><?=nl2br($siteinfo['adres']);?></div>
+					<div class="footer-social">
+						<div class="label">Мы в соцсетях:</div>
+						<div class="icons">
+							<a href="https://facebook.com/" target="_blank" title="Мы в Facebook"><?=fa('facebook');?></a>
+							<a href="https://vk.com/" target="_blank" title="Мы Вконтакте"><?=fa('vk');?></a>
+							<a href="http://ok.ru/" target="_blank" title="Мы в Одноклассниках"><?=fa('odnoklassniki');?></a>
+						</div>
+					</div>
+					<div class="copyright"><?=$siteinfo['title'];?> &copy; <?=date('Y');?>. Все права защищены</div>
+					<div class="developer">Разработка: <a href="http://narisuemvse.by" target="_blank">Narisuemvse.by</a></div>
 				</div>
 			</div>
 		</div>
